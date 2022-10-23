@@ -1,0 +1,80 @@
+@import "../../global.css";
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+   
+}
+
+.info-card .title {
+   font-size: 2.6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.info-card .poster img{
+    width: 20rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 10rem;
+    padding-block: 1rem;
+    gap: 3.2rem;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-info .full-sinopse,
+.text-info .tecnical-info{
+    background-color: var(--card-background);
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.tecnical-info{
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-content: center;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+    font-size: 1.4rem;
+    
+}
+.icons .favorite-film,
+.icons .seen-movie{
+    background-color: var(--card-background);
+    width: 11rem;
+    height: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 0.8rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.icons .favorite-film.active svg path {
+    stroke: var(--favorite-red)
+}
+
+.icons .seen-movie.active svg path {
+    stroke: var(--seen-green)
+}

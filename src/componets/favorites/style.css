@@ -1,0 +1,71 @@
+@import "../../global.css";
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+}
+
+.favorites .section-title {
+    font-size: 2.0rem;
+    margin-inline: 1.6rem;
+    line-height: 4.2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+}
+
+.favorites .favorited-movies {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.favorites .favorited-movies img {
+    width: 9.5rem;
+    height: 15rem;
+}
+
+.favorites .favorited-movies .card {
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: var(--card-background);
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+}
+
+.favorites .favorited-movies .card .movie-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.favorites .favorited-movies .card .block-01 .movie-name {
+    margin-bottom: 0.5rem;
+
+}
+
+.favorites .favorited-movies .card .block-01 .sinopse{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.favorites .favorited-movies .card .block-02 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.favorites .favorited-movies .card .icons .heart.active svg path {
+    stroke: var(--favorite-red)
+}
