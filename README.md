@@ -1,7 +1,15 @@
 # The-loop-chalenge
 
-Project created using Vite as a bundler, and React as library.
+Project created using:
+-HTML
+-CSS
+-JavaScript
+-Vite 
+-React
 
 ##To run the project use:
 
 ``` npm run dev ```
+
+## Or run Vercel link for a preview:
+[(https://the-loop-chalenge.vercel.app/)]
