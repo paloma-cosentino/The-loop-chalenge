@@ -8,5 +8,6 @@ Project created using:
 -React
 
 ##To run the project use:
+- Download a copy or use ```git clone``
 
-``` npm run dev ```
+- Run a localhost with ``` npm run dev ```
